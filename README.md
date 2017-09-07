@@ -15,6 +15,8 @@ docker images
 docker run --name node-test-container -p 3000:3000  node-test-app
 ```
 
+and go to: http://localhost:3000/
+
 ### To stop container run:
 
 ```
