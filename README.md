@@ -1,4 +1,28 @@
-# To create docker image run:
+
+# To create docker image from existing image run:
+```
+ docker run -it -w /app -v `pwd`:/app -p 3000:3000 node:8.4.0 npm install && npm start
+```
+and go to: http://localhost:3000/
+
+
+-w - define `working directory (directory inside which are executed commands)
+
+
+-v - path to shared directory on local machine 
+
+
+-npm install && npm start - commands executed after create container insideF working directory
+
+of course you can make npm install before start container and after that do only: 
+
+```
+docker run -it -w /app -v `pwd`:/app -p 3000:3000 node:8.4.0 npm start
+```
+
+
+
+# To create docker image from Dockerfile run:
 
 ```
  docker build -t node-test-app . 
