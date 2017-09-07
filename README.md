@@ -1,4 +1,4 @@
-## To create docker image run:
+# To create docker image run:
 
 ```
  docker build -t node-test-app . 
@@ -35,3 +35,11 @@ docker rm node-test-container
 ```
 docker rmi imageID
 ```
+
+
+# To create docker image and run container using docker-compose.yml run:
+```
+docker-compose up
+```
+
+and go to: http://localhost:3000/
